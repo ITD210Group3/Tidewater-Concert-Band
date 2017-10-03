@@ -2,7 +2,7 @@
 Team 1
 -Jonathan Keith Dee
 -Rebecca Shultz
--Nicholas Plutia
+-Nicholas Pluta
 -Tianna Mangual
 
 # Pages

@@ -1,9 +1,9 @@
 # Tidewater-Concert-Band
 Team 1
-Jonathan Keith Dee
-Rebecca Shultz
-Nicholas Plutia
-Tianna Mangual
+-Jonathan Keith Dee
+-Rebecca Shultz
+-Nicholas Plutia
+-Tianna Mangual
 
 # Pages
 

@@ -2,7 +2,6 @@
 Filename: tcb_styles.css
 Author: Tiana Mangual
 Date: 10/10/17
-
 */
 
 
@@ -38,6 +37,10 @@ body {
   margin-top: 5%;
 }
 
+#logo:hover {
+  opacity: .6;
+}
+
 .navbar {
   margin-top: -4.5%;
 }
@@ -67,25 +70,22 @@ body {
 }
 
 #homeButtons a:hover {
-  color: rgb(160,134,64);
   text-decoration: none;
+  color: rgb(160,134,64);
+  opacity: .7;
 }
 
 .card {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5.5%;
-  width: 15.5rem;
+  width: 16rem;
   box-shadow: 0px .5px 3px rgba(0,0,0,0.7);
 }
 
 .card-header {
-  background-color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
+  background-color: rgb(0, 60, 77);
   color: #fdfcfb;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .card-body {
@@ -93,6 +93,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
 }
+
 
 .h2 {
   text-transform: uppercase;
@@ -119,6 +120,74 @@ body {
   text-align: center;
   margin-top: 1%;
 }
+
+#aboutImage, #memberList {
+  text-align: center;
+  margin-top: 3%;
+}
+
+/* Join & Booking Styles */
+
+#joinContent, #bookingContent {
+  margin-top: 1.5%;
+}
+
+#joinImage, #bookingImage {
+  text-align: center;
+  margin-top: 3.5%;
+}
+
+#joinInfo, #bookInfo {
+  margin-top: 5%;
+}
+
+#joinTitle, #bookTitle, #bookMusicalList  {
+  text-align: center;
+}
+
+#joinPara {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#joinFormTitle, #bookFormTitle {
+  text-align: center;
+}
+
+#formButtons {
+  text-align: center;
+}
+
+#joinFormButton:hover {
+  background-color: rgb(160,134,64);
+}
+
+#bookFormButton:hover {
+  background-color: rgb(160,134,64);
+}
+
+#bookMusicalList {
+  margin-top: 5%;
+}
+
+/* Schedule Styles */
+
+table {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#showTable {
+  width:85%;
+}
+
+#eventName {
+  color: rgb(160,134,64);
+}
+
+
+/* News Styles */
+
+
 
 /* Media Styles */
 
@@ -171,7 +240,6 @@ i:hover {
 
 #footerButton:hover {
   background-color: rgb(160,134,64);
-  color: black;
 }
 
 /* Media Queries For Responsive Design*/
@@ -182,6 +250,11 @@ i:hover {
   #mainContent {
     width: 95%;
     margin: 1px auto;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
@@ -195,8 +268,12 @@ i:hover {
     margin: 0 auto;
   }
 
- }
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+ }
 
  @media (min-width: 425px) {
 
@@ -205,11 +282,15 @@ i:hover {
      margin: 0 auto;
    }
 
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
    #quote {
      margin-left: auto;
      margin-right: auto;
    }
-
 
 
   }
@@ -219,9 +300,16 @@ i:hover {
 @media (min-width: 506px) {
 
   #mainContent {
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
   }
+
+  #logo {
+    width: 50%;
+    margin-top: 3.5%;
+    margin-left: 8%;
+  }
+
 
   #quote {
     margin-left: auto;
@@ -235,8 +323,12 @@ i:hover {
 @media (min-width: 992px) {
 
   #mainContent {
-    width: 85%;
+    width:95%;
     margin: 0 auto;
+  }
+
+  #logo {
+    width: 90%;
   }
 
   #navItems {
@@ -245,8 +337,6 @@ i:hover {
   }
 
   .navLink {
-    padding: 15px;
-    letter-spacing: .5px;
     font-size: 12px;
   }
 
@@ -263,14 +353,17 @@ i:hover {
     width: 85%;
   }
 
+  #logo {
+    width: 95%;
+  }
+
   #navItems {
     margin-left: auto;
     margin-right: auto;
   }
 
   .navLink {
-    padding: 20px;
-    letter-spacing: .5px;
+    padding: 10px;
     font-size: 14px;
   }
 

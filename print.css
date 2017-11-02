@@ -30,6 +30,10 @@ body {background-color:#FFFFFF;}
   margin-top: 5%;
 }
 
+#press {
+  margin-top: 5%;
+}
+
 #myBtn {
   display: none;
 }

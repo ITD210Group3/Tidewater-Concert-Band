@@ -15,16 +15,26 @@ body {background-color:#FFFFFF;}
   display: none;
 }
 
+p {
+  font-size: 14px;
+  line-height: 32px;
+}
 
 
-#showPrint {
+#showPrint, #cntr p {
   visibility: visible;
   text-align: center;
+  font-size: 12px;
 }
 
-#ourMission, #ourSound, #ourLook, .tcbStyles {
+.tcbStyles {
   font-size: 18px;
 }
+
+.tcbStyles p {
+  font-size: 18px;
+}
+
 
 #paraTitle {
   margin-top: 5%;

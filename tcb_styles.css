@@ -23,6 +23,11 @@ hr {
   border-radius: 80px;
 }
 
+ul li {
+  list-style-type: none;
+}
+
+
 #mainContent {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   box-shadow: 0px 3px 12px rgba(266,186,143,0.7);
@@ -91,6 +96,11 @@ hr {
 }
 
 /* Home Page Styles */
+
+.d-block {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #homeButtons a {
   color: black;
@@ -216,6 +226,37 @@ table {
 #pkContent, p {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
+
+}
+
+.media-body {
+  margin-top: 5%;
+}
+
+
+
+.media-body p, .media-body2 p {
+  font-size: 18px;
+  line-height: 32px;
+
+}
+
+.media-body2 p {
+  text-align: center;
+}
+
+.listItemPK {
+  font-weight: bold;
+  //padding: 10px;
+  text-shadow: 1px 1px #efefef;
+  color: rgb(0, 60, 77);
+  text-align: center;
+}
+
+#listItemPK2 {
+  font-weight: bold;
+  text-shadow: 1px 1px #efefef;
+  color: rgb(0, 60, 77);
 }
 
 
@@ -243,12 +284,22 @@ p  {
   text-align: center;
 }
 
-.tcbStyles, #ourMission, #ourSound, #ourLook {
-  margin-top: 3.5%;
+
+.tcbStyles  {
+  margin-top: .5%;
   color: rgb(0, 60, 77);
   //font-size: 1.7em;
   text-align: center;
   font-family: "Sail", cursive;
+}
+
+.tcbStyles p {
+  font-size: 32px;
+}
+
+
+#cntr {
+  text-align: center;
 }
 
 #soundTitles {
@@ -256,6 +307,14 @@ p  {
   font-size: .8em;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: .5px;
+  text-align: center;
+}
+
+#videoTitles {
+  color: rgb(0, 60, 77);
+  font-size: .8em;
+  font-family: 'Open Sans', sans-serif;
+  //letter-spacing: .5px;
   text-align: center;
 }
 
@@ -294,15 +353,12 @@ iframe {
 
 footer {
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 100;
   text-align: center;
-  height: 100px;
   color: #fdfcfb;
 }
 
-#contactInfo {
-  margin-top: 3%;
+footer p {
+  margin-top: 2%;
 }
 
 #socialMediaIcons {
@@ -317,32 +373,22 @@ i:hover {
   color: rgb(160,134,64);
 }
 
-#footerButton  a {
+#footerButton a {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  margin-top: 8%;
-  color: white
+  color: white;
+  margin-top: 5%;
 }
-
 
 #footerButton  {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  margin-top: 8%;
   color: white;
 }
 
 #footerButton a:hover {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-  color: rgb(160,134,64);
+  color: black;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  margin-top: 8%;
-
 }
 
 #footerButton:hover {
@@ -350,10 +396,6 @@ i:hover {
   color: rgb(160,134,64);
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  margin-top: 8%;
-
 }
 
 /* Media Queries For Responsive Design*/

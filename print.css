@@ -11,13 +11,17 @@ body {background-color:#FFFFFF;}
   display: none;
 }
 
+title {
+  display: none;
+}
+
 .navbar {
   display: none;
 }
 
 p {
-  font-size: 14px;
-  line-height: 32px;
+  font-size: 12px;
+  //line-height: 32px;
 }
 
 
@@ -28,11 +32,11 @@ p {
 }
 
 .tcbStyles {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .tcbStyles p {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 

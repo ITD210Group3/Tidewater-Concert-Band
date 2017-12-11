@@ -1,6 +1,31 @@
 <!--
-    Filename: book.html
+    Filename: book.php
     Author: Team 3
+
+
+<?php
+
+if($_POST["submit"]) {
+
+    $subject="Booking Inquiry for TCB";
+    $senderFirstName=$_POST["fName"];
+    $senderLastName=$_POST["lName"];
+    $senderEmail=$_POST["userEmail"];
+    $senderPhone=$_POST["userNumber"];
+    $eventDate=$_POST["bookingDate"];
+    $musicTheme=$_POST["music"];
+    $location=$_POST["venueLocation"];
+    $city=$_POST["venueCity"];
+    $state=$_POST["venueState"];
+
+    $mailBody="First Name: $senderFirstName\nLast Name: $senderLastName\n   Email: $senderEmail\n Phone: $senderPhone\n Event Date: $eventDate\n Theme: $musicTheme\n Venue Location: $location\n City: $city\n State: $state.";
+
+    mail("tidewatercb@gmail.com", $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<h4>Thank you! Your Booking Inquiry has been sent.</h4>";
+}
+
+?>
 --->
 
 <!DOCTYPE html>
@@ -10,15 +35,15 @@
     <meta name="viewport" content="initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta charset="utf-8">
-    <meta name="description" content=" ">
-    <meta name="keywords" content=" ">
-
+    <meta name="description" content="Tidewater Concert Band is an all-volunteer ensemble that rehearses
+                                      and performs standard wind band repertoire in three primary shows: Patriotic, Traditional, Holiday.">
+    <meta name="keywords" content="Concert band, TCC, Hampton Roads, Wind band repertoire, Williamsburg, VA, Orchestra.">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Arizonia|Dancing+Script:400,700|Dynalight|Great+Vibes|Meie+Script|Parisienne|Petit+Formal+Script|Pinyon+Script|Playball|Tangerine:400,700" rel="stylesheet">
-    <title>Tidewater Concert Band | Book TCB </title>
+    <title>Tidewater Concert Band</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="tcb_styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -43,7 +68,7 @@
             <a class="nav-link" href="about.html"><span class="navLink">About</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="media.html"><span class="navLink">Media</span></a>
+            <a class="nav-link" href="social.html"><span class="navLink">Social</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="presskit.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="navLink">Press&nbsp;&nbsp;&nbsp;Kit</span> </a>
@@ -56,10 +81,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="schedule.html"><span class="navLink">Shows</span></a>
+            <a class="nav-link" href="schedule.html"><span class="navLink">Schedule</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="news.html"><span class="navLink">News</span></a>
+            <a class="nav-link" href="blog.html"><span class="navLink">Blog</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="join.html"><span class="navLink">Join</span></a>
@@ -81,21 +106,41 @@
       </div>
 
       <div class="row">
-        <div class="col">
-        <div class="space">&nbsp;</div>
-          <div id="aboutImage">
-            <img src="images/img5.jpg" class="img-fluid" alt="TCB Volunteer Image" id="pkImg"/>
+        <div class="col-sm">
+          <div class="row-sm">
+            <div class="space">&nbsp;</div>
+            <div id="aboutImage">
+              <img src="images/TCB/g14.jpg" class="img-fluid rounded" alt="TCB Volunteer Image"/>
+            </div>
+          </div>
+          <div class="row-sm">
+            <div class="space">&nbsp;</div>
+            <p>
+              Since 1971, The Tidewater Concert Band had been providing exciting, professional, high quality music entertainment to Hampton Roads and the surrounding area. The Tidewater Concert Band can provide performances ranging from Sousa Style Marches, Big Band, to Swing, Blues, and even Broadway Musicals.
+            </p>
+            <p>
+              Currently under the direction of Maestro Chris Serrano and Associate Conductor Josiah Wilson, the band consists of volunteer musicians from every occupation including, local band directors, students, as well as former and current military musicians. With passion and determination these individual musicians come together to produce a fully-instrumented top-notch professional performing organization.
+            </p>
+            <p>
+              The Tidewater Concert Band is a cultural jewel for local audience members, musicians, venues, and event organizers alike.
+            <p>
+            <p>
+              We appreciate your visit. We thank you so much for your time and attention and we look forward to seeing you very soon.
+            </p>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm">
           <div class="space">&nbsp;</div>
           <div class="container-fluid"  id="joinFormTitle">
             <h4 id="mediaTitles">Complete and submit the following Booking Form &amp; a member of TCB will contact you.</h4>
           </div>
-
-            <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLMtjGjD3Cc45quhkfIZ07Uu6aa49dpvwIabA7dmAPCwU-lQ/viewform?embedded=true" >Loading...</iframe>
-      </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLMtjGjD3Cc45quhkfIZ07Uu6aa49dpvwIabA7dmAPCwU-lQ/viewform?embedded=true" >Loading...</iframe>
+          </div>
+          <div class="row-sm">
+            <div class="space">&nbsp;</div>
+            <a href="presskit.html"><p class="listItemPK" id="joinUsLink">For audio &amp; video samples<br> Visit our Presskit Page!</a></p>
+          </div>
           </div>
         </div>
       </div>
@@ -107,13 +152,13 @@
   <footer class="container">
     <div class="row">
      <div class="col-sm">
-       <p><button type="button" class="btn btn-outline-light" id="footerButton"> <a href="TCB_PressKit2017.zip" download="TCB Press Kit">Download Our Press Kit</a></button></p>
+       <p><button type="button" class="btn btn-outline-light" id="footerButton"> <a href="TCB_PressKit.zip" download="TCB Press Kit">Download Our Press Kit</a></button></p>
      </div>
      <div class="col-sm">
 
      </div>
      <div class="col-sm">
-       <p>Contact Address | <i class="fa fa-facebook" aria-hidden="true" href="https://www.facebook.com/Tidewater-Concert-Band-101429780314680/"></i></p>
+       <p>tidewatercb@gmail.com</p>
      </div>
    </div>
  </footer>

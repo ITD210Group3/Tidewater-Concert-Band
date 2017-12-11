@@ -1,5 +1,5 @@
 <!--
-    Filename: schedule.html
+    Filename: media.html
     Author: Team 3
 --->
 
@@ -25,6 +25,16 @@
   </head>
 
   <body>
+    <!-- JavaScript Code for Facebook Widget -->
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
     <div id="mainContent" class="container-fluid rounded">
       <div class="container-fluid rounded" id="quote">
         <h5 class="listItemPK"><strong>Providing Music For Hampton Roads, Virginia Since <span id="quoteDate">1971</span></strong></h5>
@@ -40,10 +50,10 @@
       <span id="navItems">
         <ul class="nav justify-content-center" id="makeLinksVertical">
           <li class="nav-item">
-            <a class="nav-link" href="#about.html"><span class="navLink">About</span></a>
+            <a class="nav-link" href="about.html"><span class="navLink">About</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="social.html"><span class="navLink">Social</span></a>
+            <a class="nav-link" href="#"><span class="navLink">Social</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="presskit.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="navLink">Press&nbsp;&nbsp;&nbsp;Kit</span> </a>
@@ -72,37 +82,51 @@
       </div>
     </nav>
 
+    <div class="container-fluid" id="paraTitle">
+      <h1 id="paraTitle">Social</h1>
+      <hr>
+    </div>
+
+
     <div class="container-fluid">
+      <div class="space">&nbsp;</div>
+        <div id="facebookStream">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftidewaterconcertband%5C&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+      <div class="space">&nbsp;</div>
+      <h5 id="mediaTitles"> Musical Selections </h5>
       <div class="row">
-        <div class="col">
-          <h1 id="paraTitle">Performance Schedule</h1>
-          <hr>
+        <div class="col-sm">
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://www.reverbnation.com/widget_code/html_widget/artist_6001437?widget_id=55&pwc[included_songs]=1&context_type=page_object&spoid=artist_6001437&pwc[size]=small&pwc[color]=dark" style="width:0px;min-width:100%;max-width:100%;"></iframe>
+        </div>
+      </div>
+
+      <div class="space">&nbsp;</div>
+
+      <h5 id="mediaTitles"> Live Performances </h5>
+      <div class="space">&nbsp;</div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="widget_iframe" style="display:inline-block;width:100%;height:350px;margin:0;padding:0;border:0;"><iframe class="widget_iframe" src="https://www.reverbnation.com/widget_code/html_widget/artist_6001437?widget_id=51&amp;posted_by=artist_6001437&pwc[design]=default&pwc[background_color]=%23333333&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no" style="width:0px;min-width:100%;max-width:100%;"></iframe><div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;"><center><a href="https://www.reverbnation.com/band-promotion/epk-electronic-press-kits?utm_campaign=a_features_rpk&utm_medium=widget&utm_source=HTML5_Video_Player&utm_content=widgetfooter_Learn how to make a free Electronic Press Kit" target="_blank" style="text-decoration:none;color:#444;">Learn how to make a free Electronic Press Kit</a></center></div></div>
         </div>
       </div>
     </div>
-    <div class="widget_iframe" style="display:inline-block;width:100%;height:550px;margin:0;padding:0;border:0;">
-      <iframe class="widget_iframe" src="https://www.reverbnation.com/widget_code/html_widget/artist_6001437?widget_id=52&amp;posted_by=artist_6001437&pwc[design]=customized&pwc[background_color]=%238abdbd&pwc[layout]=detailed&pwc[show_map]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no" style="width:0px;min-width:100%;max-width:100%;"></iframe>
-      <div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;"><center><a href="https://www.reverbnation.com/band-promotion/how-to-sell-music-on-itunes?utm_campaign=a_features_distribution&utm_medium=widget&utm_source=HTML5_Show_Schedule&utm_content=widgetfooter_Sell music on itunes at ReverbNation.com" target="_blank" style="text-decoration:none;color:#444;"></a></center>
-      </div>
-    </div>
-    <div class="space">&nbsp;</div>
-    <a href="presskit.html"><p class="listItemPK">For audio &amp; video samples, visit our Presskit Page!</a></p>
-    </div>
+  </div>
 
 
-    <footer class="container">
-      <div class="row">
-       <div class="col-sm">
-         <p><button type="button" class="btn btn-outline-light" id="footerButton"> <a href="TCB_PressKit.zip" download="TCB Press Kit">Download Our Press Kit</a></button></p>
-       </div>
-       <div class="col-sm">
-
-       </div>
-       <div class="col-sm">
-         <p>tidewatercb@gmail.com</p>
-       </div>
+  <footer class="container">
+    <div class="row">
+     <div class="col-sm">
+       <p><button type="button" class="btn btn-outline-light" id="footerButton"> <a href="TCB_PressKit.zip" download="TCB Press Kit">Download Our Press Kit</a></button></p>
      </div>
-   </footer>
+     <div class="col-sm">
+
+     </div>
+     <div class="col-sm">
+       <p>tidewatercb@gmail.com</p>
+     </div>
+   </div>
+ </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

@@ -2,16 +2,15 @@
 Team 1
 -Jonathan Keith Dee
 -Rebecca Shultz
--Nicholas Pluta
 -Tianna Mangual
 
 # Pages
 
 1. Home
 2. About
-3. Join
-4. schedule
-5. Booking
-6. Media
-7. Presskit
-8. News
+3. Social
+4. Press Kit
+5. Schedule
+6. Blog
+7. Join 
+8. Book 
